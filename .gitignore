@@ -1,6 +1,7 @@
-<<<<<<< HEAD
+
+# Node Artifacts
 node_modules
+dist
+
+# Parcel
 .parcel-cache
-=======
-/node_modules
->>>>>>> 979bed444e0c28ab66b04ec27431f900885161d5
