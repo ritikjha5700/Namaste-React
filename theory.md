@@ -36,3 +36,4 @@
    - Consistent Hashing Algorithm.
    - Zero config. Other webpacks has some config.
    - `Transitive dependency:` When we are building a production ready app We need a lot of things (compression, minification, image optimization etc..) which require packages to handle it and those packages depend on some other packages this is transitive dependency.
+8. `browserlist:` this is to tell on what versions of browser we want our web to run.
