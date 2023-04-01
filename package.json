@@ -1,32 +1,21 @@
 {
-<<<<<<< HEAD
-  "devDependencies": {
-    "parcel": "^2.8.3"
-=======
   "name": "namaste-react",
   "version": "1.0.0",
-  "description": "This is a practice repo",
+  "description": "` This repository contains all the theory and code from the course \"Namaste React by Akshay Saini\" which i have pracised during the course. `",
   "main": "App.js",
+  "devDependencies": {},
   "scripts": {
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ritikjha5700/Namaste-React.git"
   },
-  "author": "Ritik",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ritikjha5700/Namaste-React/issues"
   },
-  "homepage": "https://github.com/ritikjha5700/Namaste-React#readme",
-  "devDependencies": {
-    "parcel": "^2.8.3",
-    "process": "^0.11.10"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
->>>>>>> 979bed444e0c28ab66b04ec27431f900885161d5
-  }
+  "homepage": "https://github.com/ritikjha5700/Namaste-React#readme"
 }

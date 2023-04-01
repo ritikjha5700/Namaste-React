@@ -36,4 +36,9 @@
    - **_Consistent Hashing Algorithm._**
    - Zero config. Other webpacks has some config.
    - `Transitive dependency:` When we are building a production ready app We need a lot of things (compression, minification, image optimization etc..) which require packages to handle it and those packages depend on some other packages this is transitive dependency.
-8. `browserlist:` this is to tell on what versions of browser we want our web to run.
+   - **_Tree Shaking_** Parcel removes unwated code. A library has many functionality but we don't wanna use them all so unused features code get ignored by parcel.
+   - Performent scalable applications are made using react and bundlers together. There are so many things react gives us and there are so many things bundlers gives us.
+8. `browserlist:` this is to tell on what versions of browser we want our web to run. If we are telling `last two version of
+    chrome that does not mean it will only work on **_last two version of chrome_** instead it does mean it will definitely work on **_the last two version of chrome_** and will also work for other browsers.
+9. `Pollyfill:` If our browser is old and it does not understand what does a code mean then there is the replacement code done 
+   it is done by `Babel`. And babel uses browserlist. We don't have to write polyfill code Babel automatically does it. **_Babel_** is a package.
