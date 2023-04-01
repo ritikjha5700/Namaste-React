@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "` This repository contains all the theory and code from the course \"Namaste React by Akshay Saini\" which i have pracised during the course. `",
   "main": "App.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/ritikjha5700/Namaste-React/issues"
   },
-  "homepage": "https://github.com/ritikjha5700/Namaste-React#readme"
+  "homepage": "https://github.com/ritikjha5700/Namaste-React#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserlist": [
+    "last 2 Chrome versions"
+  ]
 }
