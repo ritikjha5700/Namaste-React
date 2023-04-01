@@ -12,7 +12,7 @@
 3. `Dependency:` Dependency means all the packages our project needs. Packages comes with extra features that react needs.
    - We have `devDependencies` and `globalDepencies`. It basically tells how you need it.
    - `^` this is called caret `~` this is tilde. They basically specifies that if that current version of an package is upadted then update it in my project as well. And this happens automatically. If we remove these from the version that means we don't want any update in the package.
-   - `package-lock.json: ` is a very important file, it locks the version. It maintains the hash(intigrity) of it as well, hash ensures what exactly the version running in my system is exactly the same as on the production.
+   - `package-lock.json: ` is a very important file, it locks the version. It maintains the hash(intigrity) of it as well, hash ensures what exactly the version running in my system is exactly the same as on the production. package.lock.json is created for locking the dependency with the installed version. It will install the exact latest version of that package in your application and save it in package.json.
    - `node_modules:` it is like a database for npm.
 4. - `npm i react ` install react as dependency
    - `npm i react-dom` install react-dom as dependency
