@@ -21,12 +21,12 @@
 5. `npx parcel index.html ` (index.html) is the entry point to our app
    - **_npx_** means we are telling npm to execute.
    - parcel starts running our app on a server.
-6. - we need to import **_react_** and **_react-dom_** to our App.js so it can know where is this react and react-dom coming from. tho it 
+6. - we need to import **_react_** and **_react-dom_** to our App.js so it can know where is this react and react-dom coming from. tho it
      ran without importing in our case but it was being rendered very slow.
    - and also we have to export it as **_module_** while calling **_App.js_** in **_index.html_** file.
    - **_HMR_**: Hot module replacement. It keeps track of all file which we are updating and reloads page automatically. This is done by `File watcher algorithm` and it is written in **_c++._** And these functionality comming from **_.parcel-cache_** folder.
 7. `npx parcel build index.html` this will create production build file and minify all our code to **_dist_** folder to run it faster.
-   - parcel cleans up our code removes all console-logs and all other garbage files to make it production ready.
+   - parcel cleans up our code all other garbage files to make it production ready.
    - parcel also does minify images (does optimization).
    - parcel does caching while development for code optimization.
    - code compression.
@@ -39,6 +39,41 @@
    - **_Tree Shaking_** Parcel removes unwated code. A library has many functionality but we don't wanna use them all so unused features code get ignored by parcel.
    - Performent scalable applications are made using react and bundlers together. There are so many things react gives us and there are so many things bundlers gives us.
 8. `browserlist:` this is to tell on what versions of browser we want our web to run. If we are telling `last two version of
-    chrome that does not mean it will only work on **_last two version of chrome_** instead it does mean it will definitely work on **_the last two version of chrome_** and will also work for other browsers.
-9. `Pollyfill:` If our browser is old and it does not understand what does a code mean then there is the replacement code done 
+   chrome that does not mean it will only work on **_last two version of chrome_** instead it does mean it will definitely work on **_the last two version of chrome_** and will also work for other browsers.
+9. `Pollyfill:` If our browser is old and it does not understand what does a code mean then there is the replacement code done
    it is done by `Babel`. And babel uses browserlist. We don't have to write polyfill code Babel automatically does it. **_Babel_** is a package.
+10. parcel doesn't remove `console.log` from build file we have to use a pluggin called `babel-plugin-transform-remove-console` to do so. `npm install babel-plugin-transform-remove-console (plugin name) --save-dev`
+11. keys should be unique.
+12. `React.CreateElement` is an object which then converted into html (DOM).
+13. Suppose we have to create a list then we have write so many `React.CreateElement` which is a huge mess. That is why we use.
+   - JSX is html like code not html inside js.
+   - Browsers don't understand JSX code. Babel understands JSX code and does the job for us.
+   - Babel converts code from JSX to Javascript for browsers to understand.
+   - Babel comes along with parcel.
+   - We have another `package-lock.json` inside `node_modules` to keep track of versions of transitive dependencies.
+14. React Component: Everything in react is a component. Eg: Navbar, search bar, search icon, logo.. ect.
+   - Two types of React component:
+      a. Functional: New
+      b. Class Based Component: Old
+   - Functional Component is nothing but a normal function. It basically returns some JSX code or some react element.
+   - Name of component starts with capital letter. Eg: HeadComponent. It is not manadatory but is the convention. It is a good practice.
+   - **Both the codes written below are same**
+   - const HeadComponent = () => {
+      return (
+         <div>
+            <h1>This is H1</h1>
+            <h2> This is H2</h2>
+         </div>
+      );
+   };
+
+   - const HeadComponent2 = () => (
+      <div>
+         <h1>This is H1</h1>
+         <h2> This is H2</h2>
+      </div>
+   );
+15. JSX handles all kind of malicious attack. Let's say we are getting some data from an an api and someone injected some malicious code (called XSS - cross site scripting) in that api and now we are using that api, so what JSX does is it sanitizes our code first and then render it. JSX OP🔥🔥
+16. Using a component inside another component is konwn as `Component composition`.
+17. 
+ 
